@@ -1,6 +1,6 @@
 # alura-data-structure
 
-Estrutura de Dados. Aqui veremos as principais estruturas, como:
+# Estrutura de Dados: Aqui poderá ser visto as principais estruturas, como:
 - Listas,
 - Listas ligadas,
 - Listas duplamente ligadas,
