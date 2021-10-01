@@ -1,5 +1,13 @@
 # alura-data-structure
 
+Estrutura de Dados. Aqui veremos as principais estruturas, como:
+- Listas,
+- Listas ligadas,
+- Listas duplamente ligadas,
+- Pilhas,
+- Filas,
+- Conjuntos, etc.
+
 # Temas abordados durante o curso:
 - Entenda como um array funciona
 - Implemente listas ligadas e duplamente ligadas
