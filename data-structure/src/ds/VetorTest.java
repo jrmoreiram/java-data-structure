@@ -9,9 +9,9 @@ public class VetorTest {
 		Vetor list = new Vetor();
 		
 		System.out.println(list.size());
-		list.addAluno(s1);
+		list.addStudent(s1);
 		System.out.println(list.size());
-		list.addAluno(s2);
+		list.addStudent(s2);
 		System.out.println(list.size());
 		
 		System.out.println(list);
@@ -19,7 +19,16 @@ public class VetorTest {
 		System.out.println(list.containsStudent(s1));
 		
 		Student s3 = new Student("Danilo");
-		
 		System.out.println(list.containsStudent(s3));
+		
+//		Test invalid position.
+//		Student x = list.getStudent(158);
+//		System.out.println(x);
+		
+		list.addStudentInTheMiddle(1, s3);
+		System.out.println(list);
+		
+		list.removeStudent(1);
+		System.out.println(list);
 	}
 }
