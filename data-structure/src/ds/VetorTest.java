@@ -1,5 +1,7 @@
 package ds;
 
+import java.util.ArrayList;
+
 public class VetorTest {
 	public static void main(String[] args) {
 		
@@ -25,10 +27,24 @@ public class VetorTest {
 //		Student x = list.getStudent(158);
 //		System.out.println(x);
 		
-		list.addStudentInTheMiddle(1, s3);
+		list.addStudent(1, s3);
 		System.out.println(list);
 		
 		list.removeStudent(1);
 		System.out.println(list);
+		
+		for (int i = 0; i < 300; i++) {
+			Student y = new Student("Joao" + i);
+			list.addStudent(y);
+		}
+		
+		System.out.println(list);
+		
+		
+		//Implementação de vetor(Java).
+		ArrayList<Student> listOfJava = new ArrayList<Student>();
+		listOfJava.add(s2);
+		listOfJava.add(1, s2);
+		listOfJava.remove(1);
 	}
 }

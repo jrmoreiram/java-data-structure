@@ -3,7 +3,7 @@ package ds;
 import java.util.Arrays;
 
 /*
- * Classe com exemplo de estrutura de dados de armazenamento sequencial(ARRAY).
+ * Classe com exemplo de armazenamento sequencial(ARRAY).
  */
 public class Vetor {
 
@@ -11,6 +11,8 @@ public class Vetor {
 	private int totalOfStudents = 0;
 
 	public void addStudent(Student student) {
+		this.resizeArray();
+		
 		this.students[totalOfStudents] = student;
 		totalOfStudents++;
 	}
@@ -19,11 +21,25 @@ public class Vetor {
 		return position >= 0 && position <= totalOfStudents;
 	}
 	
-	public void addStudentInTheMiddle(int position, Student student) {
+	private void dinamicSize() {
+		resizeArray();
+	}
+
+	private void resizeArray() {
+		if (totalOfStudents == students.length) {
+			Student[] newStudentArray = new Student[students.length*2];
+			for(int i = 0; i < students.length; i++) {
+				newStudentArray[i] = students[i];
+			}
+			this.students = newStudentArray;
+		}
+	} 
+	
+	public void addStudent(int position, Student student) {
+		this.resizeArray();
 		
 		if (!validPosition(position)) {
 			throw new IllegalArgumentException("Position Invalid.");
-			
 		}
 		
 		for(int i = totalOfStudents -1; i >= position; i-=1 ) {
@@ -75,5 +91,4 @@ public class Vetor {
 	public String toString() {
 		return Arrays.toString(students);
 	}
-
 }
