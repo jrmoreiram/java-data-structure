@@ -3,7 +3,7 @@ package ds;
 import java.util.Arrays;
 
 /*
- * Classe com exemplo de armazenamento sequencial(ARRAY).
+ * Capítulo 2 - Armazenamento sequencial e Vetores(Arrays).
  */
 public class Vetor {
 
