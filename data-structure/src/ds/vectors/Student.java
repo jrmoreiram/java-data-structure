@@ -1,4 +1,4 @@
-package ds;
+package ds.vectors;
 
 public class Student {
 	private String name;

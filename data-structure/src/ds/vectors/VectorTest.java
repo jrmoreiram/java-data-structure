@@ -1,14 +1,14 @@
-package ds;
+package ds.vectors;
 
 import java.util.ArrayList;
 
-public class VetorTest {
+public class VectorTest {
 	public static void main(String[] args) {
 		
 		Student s1 = new Student("Joao");
 		Student s2 = new Student("Jose");
 		
-		Vetor list = new Vetor();
+		Vector list = new Vector();
 		
 		System.out.println(list.size());
 		list.addStudent(s1);

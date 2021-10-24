@@ -1,11 +1,11 @@
-package ds;
+package ds.vectors;
 
 import java.util.Arrays;
 
 /*
  * Capítulo 2 - Armazenamento sequencial e Vetores(Arrays).
  */
-public class Vetor {
+public class Vector {
 
 	private Student[] students = new Student[100];
 	private int totalOfStudents = 0;
