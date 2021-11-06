@@ -1,64 +1,112 @@
 package ds.linkedlist;
 
 public class LinkedList {
-	
+
 	private Cell first = null;
 	private Cell end = null;
 	private int totalOfElements = 0;
-	
+
 	public void addFirst(Object element) {
 		Cell newCell = new Cell(element, first);
 		this.first = newCell;
-		
-		 if(this.totalOfElements == 0) {
-	            this.end = this.first;
-	        }
-		
+
+		if (this.totalOfElements == 0) {
+			this.end = this.first;
+		}
+
 		this.totalOfElements++;
 	}
 
-    public void addEnd(Object element) {
-    	 if(this.totalOfElements == 0) {
-    	        addFirst(element);
-    	    } else {
-	    	 Cell newCell = new Cell(element, null);
-	    	    this.end.setNext(newCell);
-	    	    this.end = newCell;
-	    	    this.totalOfElements++;
-    	}
-    }
+	public void addEnd(Object element) {
+		if (this.totalOfElements == 0) {
+			addFirst(element);
+		} else {
+			Cell newCell = new Cell(element, null);
+			this.end.setNext(newCell);
+			this.end = newCell;
+			this.totalOfElements++;
+		}
+	}
 
-    public void addMiddle(int position, Object element) {}
+	public void addMiddle(int position, Object element) {
+		if (position == 0) {
+			addFirst(element);
+		} else if (position == this.totalOfElements) {
+			addEnd(element);
+		} else {
+			Cell previous = this.getCell(position - 1);
+			Cell newCell = new Cell(element, previous.getNext());
 
-    public Object get(int position) { return null; }
+			previous.setNext(newCell);
+			this.totalOfElements++;
+		}
+	}
 
-    public void remove(int position) {}
+	public Object get(int position) {
+		return this.getCell(position).getElement();
+	}
 
-    public int size() { return 0; }
+	public void remove(int position) {}
+	
+	public void removeFirst() {
+		if(this.totalOfElements == 0) {
+	        throw new IllegalArgumentException("lista vazia");
+	    }
 
-    public boolean contain(Object o) { return false;}
-    
-    @Override
-    public String toString () {
+	    this.first = this.first.getNext();
+	    this.totalOfElements--;
 
-        if(this.totalOfElements == 0) {
-            return "[]";
-        }
+	    if(this.totalOfElements == 0) {
+	        this.end = null;
+	    }
+	}
 
-        Cell atual = first;
+	public int size() {
+		return this.totalOfElements;
+	}
 
-        StringBuilder builder = new StringBuilder("[");
+	public boolean contain(Object o) {
+		return false;
+	}
 
-        for(int i = 0; i < totalOfElements; i++) {
-            builder.append(atual.getElement());
-            builder.append(",");
+	@Override
+	public String toString() {
 
-            atual = atual.getNext();
-        }
+		if (this.totalOfElements == 0) {
+			return "[]";
+		}
 
-        builder.append("]");
+		Cell current = first;
 
-        return builder.toString();
-    }
+		StringBuilder builder = new StringBuilder("[");
 
+		for (int i = 0; i < totalOfElements; i++) {
+			builder.append(current.getElement());
+			builder.append(",");
+
+			current = current.getNext();
+		}
+
+		builder.append("]");
+
+		return builder.toString();
+	}
+
+	private boolean positionOccupied(int position) {
+		return position >= 0 && position < this.totalOfElements;
+	}
+
+	private Cell getCell(int position) {
+
+		if (!positionOccupied(position)) {
+			throw new IllegalArgumentException("posicao inexistente");
+		}
+
+		Cell current = first;
+
+		for (int i = 0; i < position; i++) {
+			current = current.getNext();
+		}
+		return current;
+	}
 }

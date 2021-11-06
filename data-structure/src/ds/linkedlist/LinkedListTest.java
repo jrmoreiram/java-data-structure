@@ -15,6 +15,18 @@ public class LinkedListTest {
         
         list.addEnd("Marcelo");
         System.out.println(list);
+        
+        list.addMiddle(2, "Gabriel");
+        System.out.println(list);
+        
+        Object x = list.get(2);
+        System.out.println(x);
+        
+        System.out.println(list.size());
+        
+        list.removeFirst();
+        System.out.println(list);
+        
+        System.out.println(list.size());
     }
-
 }
