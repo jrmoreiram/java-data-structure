@@ -1,22 +1,24 @@
-package ds.linkedlist;
+package ds.doublylinkedlist;
 
 /*
- * Capítulo 3 - Lista Ligadas.
+ * Capítulo 4 - Lista Duplamente Ligadas.
  */
-public class LinkedList {
+public class DoublyLinkedList {
 
 	private Cell first = null;
 	private Cell end = null;
 	private int totalOfElements = 0;
 
 	public void addFirst(Object element) {
-		Cell newCell = new Cell(element, first);
-		this.first = newCell;
-
 		if (this.totalOfElements == 0) {
-			this.end = this.first;
+			Cell newCell = new Cell(element);
+			this.first = newCell;
+			this.end = newCell;
+		} else {
+			Cell newCell = new Cell(element, first);
+			this.first.setPrevious(newCell);
+			this.first = newCell;
 		}
-
 		this.totalOfElements++;
 	}
 
@@ -24,8 +26,9 @@ public class LinkedList {
 		if (this.totalOfElements == 0) {
 			addFirst(element);
 		} else {
-			Cell newCell = new Cell(element, null);
+			Cell newCell = new Cell(element);
 			this.end.setNext(newCell);
+			newCell.setPrevious(end);
 			this.end = newCell;
 			this.totalOfElements++;
 		}
@@ -35,12 +38,15 @@ public class LinkedList {
 		if (position == 0) {
 			addFirst(element);
 		} else if (position == this.totalOfElements) {
-			addEnd(element);
+			this.addEnd(element);
 		} else {
-			Cell previous = this.getCell(position - 1);
-			Cell newCell = new Cell(element, previous.getNext());
+			Cell previous = getCell(position - 1);
+			Cell next = previous.getNext();
 
+			Cell newCell = new Cell(element, previous.getNext());
+			newCell.setPrevious(previous);
 			previous.setNext(newCell);
+			next.setPrevious(newCell);
 			this.totalOfElements++;
 		}
 	}
@@ -49,19 +55,45 @@ public class LinkedList {
 		return this.getCell(position).getElement();
 	}
 
-	public void removeMiddle(int position) {}
-		
+	public void removeMiddle(int position) {
+		if (position == 0) {
+			this.removeFirst();
+		} else if (position == this.totalOfElements - 1) {
+			this.removeEnd();
+		} else {
+			Cell previous = this.getCell(position - 1);
+			Cell current = previous.getNext();
+			Cell next = current.getNext();
+
+			previous.setNext(next);
+			next.setPrevious(previous);
+
+			this.totalOfElements--;
+		}
+	}
+
 	public void removeFirst() {
-		if(this.totalOfElements == 0) {
-	        throw new IllegalArgumentException("lista vazia");
-	    }
+		if (this.totalOfElements == 0) {
+			throw new IllegalArgumentException("lista vazia");
+		}
 
-	    this.first = this.first.getNext();
-	    this.totalOfElements--;
+		this.first = this.first.getNext();
+		this.totalOfElements--;
 
-	    if(this.totalOfElements == 0) {
-	        this.end = null;
-	    }
+		if (this.totalOfElements == 0) {
+			this.end = null;
+		}
+	}
+
+	public void removeEnd() {
+		if (this.totalOfElements == 1) {
+			this.removeFirst();
+		} else {
+			Cell penult = this.end.getPrevious();
+			penult.setNext(null);
+			this.end = penult;
+			this.totalOfElements--;
+		}
 	}
 
 	public int size() {
@@ -69,6 +101,15 @@ public class LinkedList {
 	}
 
 	public boolean contains(Object element) {
+
+		Cell current = this.first;
+
+		while (current != null) {
+			if (current.getElement().equals(element)) {
+				return true;
+			}
+			current = current.getNext();
+		}
 		return false;
 	}
 

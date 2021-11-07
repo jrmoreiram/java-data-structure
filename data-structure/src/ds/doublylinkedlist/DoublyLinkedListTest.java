@@ -1,9 +1,9 @@
-package ds.linkedlist;
+package ds.doublylinkedlist;
 
-public class LinkedListTest {
+public class DoublyLinkedListTest {
 
 	public static void main(String[] args) {
-		LinkedList list = new LinkedList();
+		DoublyLinkedList list = new DoublyLinkedList();
 
 		System.out.println("emptyList:" + list);
 		list.addFirst("Mauricio");
@@ -26,6 +26,15 @@ public class LinkedListTest {
 
 		list.removeFirst();
 		System.out.println("removeFirst:" + list);
+
+		list.removeEnd();
+		System.out.println("removeEnd:" + list);
+
+		list.removeMiddle(2);
+		System.out.println("removeMiddle(2):" + list);
+
+		System.out.println("contains('Paulo'):" + list.contains("Paulo"));
+		System.out.println("contains('Danilo'):" + list.contains("Danilo"));
 
 		System.out.println("sizeList:" + list.size());
 	}
