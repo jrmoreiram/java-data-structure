@@ -37,6 +37,12 @@ public class SetTest {
 	       
 	       String x = "Guilherme";
 	       x.hashCode();
-	       System.out.println(x);
+	       
+	       System.out.println("Guilherme.hashCode():" + "Guilherme".hashCode());
+	       System.out.println("Guilherme.hashCode():" + "Guilherme".hashCode());
+	       System.out.println("Marcelo.hashCode():" + "Marcelo".hashCode());
+	       System.out.println("Marcelo.hashCode():" + "Marcelo".hashCode());
+	       System.out.println("Mauricio.hashCode():" + "Mauricio".hashCode());
+	       System.out.println("Mauricio.hashCode():" + "Mauricio".hashCode());
 	}
 }
