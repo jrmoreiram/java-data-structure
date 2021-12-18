@@ -1,4 +1,4 @@
-# Curso de Estrutura de Dados: Computação na prática com Java.
+# Curso de Estrutura de Dados: Computação na prática com Java
 
 ### Temas abordados durante o curso:
 - Entenda como um array funciona
