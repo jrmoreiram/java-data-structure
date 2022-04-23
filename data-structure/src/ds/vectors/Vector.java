@@ -3,7 +3,7 @@ package ds.vectors;
 import java.util.Arrays;
 
 /*
- * Capítulo 2 - Armazenamento sequencial e Vetores(Arrays).
+ * CapÃ­tulo 2 - Armazenamento sequencial e Vetores(Arrays).
  */
 public class Vector {
 

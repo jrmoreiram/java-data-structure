@@ -3,6 +3,9 @@ package ds.queue;
 import java.util.LinkedList;
 import java.util.List;
 
+/*
+ * Capitulo 6 - Filas.
+ */
 public class Queues {
 	
 	private List<String> students = new LinkedList<String>();

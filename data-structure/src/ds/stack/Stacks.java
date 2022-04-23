@@ -3,6 +3,9 @@ package ds.stack;
 import java.util.LinkedList;
 import java.util.List;
 
+/*
+ * Capitulo 5 - Pilhas.
+ */
 public class Stacks {
 	
 	private List<String> names = new LinkedList<String>();

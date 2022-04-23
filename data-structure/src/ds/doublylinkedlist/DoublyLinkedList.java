@@ -1,7 +1,7 @@
 package ds.doublylinkedlist;
 
 /*
- * Capítulo 4 - Lista Duplamente Ligadas.
+ * Capitulo 4 - Lista Duplamente Ligadas.
  */
 public class DoublyLinkedList {
 

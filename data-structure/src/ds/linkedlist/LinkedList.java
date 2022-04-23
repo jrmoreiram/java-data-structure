@@ -1,7 +1,7 @@
 package ds.linkedlist;
 
 /*
- * Capítulo 3 - Lista Ligadas.
+ * Capitulo 3 - Lista Ligadas.
  */
 public class LinkedList {
 

@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+/*
+ * Capitulo 7 - Conjuntos.
+ */
 public class Sets {
 	private ArrayList<LinkedList<String>> table = new ArrayList<LinkedList<String>>();
 

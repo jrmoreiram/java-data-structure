@@ -17,7 +17,7 @@ public class QueueTest {
 		System.out.println("removeStudent(x1):" + x1);
 		System.out.println("queue:" + queues);
 
-		// Implementação java para filas.
+		// Implementacao java para filas.
 		Queue<String> javaQueue = new LinkedList<String>();
 		javaQueue.add("Jean");
 		String x2 = javaQueue.poll();

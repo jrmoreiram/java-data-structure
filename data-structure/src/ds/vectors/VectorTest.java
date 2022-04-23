@@ -40,7 +40,7 @@ public class VectorTest {
 
 		System.out.println(list);
 
-		// Implementação de vetor na especificação Java.
+		// Implementacao de vetor na especificacao Java.
 		ArrayList<Student> listOfJava = new ArrayList<Student>();
 		listOfJava.add(s2);
 		listOfJava.add(1, s2);

@@ -27,7 +27,7 @@ public class SetTest {
 		set.removeWord("Mauricio");
 		System.out.println("removeWord('Mauricio'):" + set);
 		
-	    //Implementação java para conjuntos.
+	    //Implementacao java para conjuntos.
 	       Set<String> javaSet = new HashSet<String>();
 
 	       javaSet.add("Mauricio");
