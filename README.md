@@ -1,5 +1,4 @@
-# 📦 Documentação do Software  
-## Projeto: Estruturas de Dados em Java
+# Estruturas de Dados em Java
 
 ## 1. 📖 Visão Geral
 Este projeto tem como objetivo implementar e demonstrar, de forma prática, as principais estruturas de dados utilizando a linguagem Java. Ele foi desenvolvido como material de apoio ao curso **"Estrutura de Dados: Computação na Prática com Java"**, servindo como referência didática e técnica.
