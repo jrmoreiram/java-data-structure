@@ -1386,7 +1386,7 @@ Se você está usando este projeto, avise-nos! Adoraríamos adicionar você aqui
 
 <div align="center">
 
-### Feito com ❤️ pela comunidade Java
+### Feito com ❤️ e Java
 
 **⭐ Se este projeto te ajudou, considere dar uma estrela!**
 
