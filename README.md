@@ -1254,14 +1254,6 @@ Este projeto foi desenvolvido como parte do **Curso Docker da DevMedia**.
 - **PHP Community** - Linguagem de programação
 - **Apache Foundation** - Servidor web
 
-### Reconhecimentos
-
-Agradecimentos especiais a todos que contribuíram para este projeto:
-
-- Comunidade Java
-- Professores e estudantes de Ciência da Computação
-- Todos os contribuidores do GitHub
-
 ### Apoie o Projeto
 
 Se este projeto te ajudou, considere:
