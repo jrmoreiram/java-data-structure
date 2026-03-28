@@ -1238,16 +1238,21 @@ SOFTWARE.
 
 ## 👥 Autores e Contato
 
-### Equipe Principal
+### Autor Principal
 
-Este é um projeto educacional open-source mantido pela comunidade.
+**Junior Moreira Martins**
+- GitHub: [@jrmoreiram](https://github.com/jrmoreiram)
+- Email: jumoreiram@gmail.com
+- LinkedIn: [Junior Moreira Martins](https://www.linkedin.com/in/jumoreiram/)
 
-### Como Entrar em Contato
+### Créditos
 
-- 📧 **Email:** contato@estruturas-dados-java.com
-- 💬 **Discussions:** [GitHub Discussions](https://github.com/seu-usuario/estruturas-dados-java/discussions)
-- 🐛 **Issues:** [GitHub Issues](https://github.com/seu-usuario/estruturas-dados-java/issues)
-- 📖 **Wiki:** [GitHub Wiki](https://github.com/seu-usuario/estruturas-dados-java/wiki)
+Este projeto foi desenvolvido como parte do **Curso Docker da DevMedia**.
+
+- **DevMedia** - Plataforma de ensino
+- **Docker Inc.** - Tecnologia de containerização
+- **PHP Community** - Linguagem de programação
+- **Apache Foundation** - Servidor web
 
 ### Reconhecimentos
 
