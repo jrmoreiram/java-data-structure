@@ -1279,7 +1279,7 @@ Se este projeto te ajudou, considere:
 
 - [Coursera - Data Structures](https://www.coursera.org/specializations/data-structures-algorithms)
 - [MIT OpenCourseWare - Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)
-- [DevMedia - Curso de Estrutura de Dados: Computação na prática com Java](https://www.udemy.com/topic/data-structures/)
+- [DevMedia - Curso de Estrutura de Dados: Computação na prática com Java](https://www.devmedia.com.br/)
 
 ### Referências Online
 
