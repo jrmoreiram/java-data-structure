@@ -1383,7 +1383,7 @@ Se você está usando este projeto, avise-nos! Adoraríamos adicionar você aqui
 
 <div align="center">
 
-### Feito com ❤️ e Java
+### Feito com ❤️ usando Java
 
 **⭐ Se este projeto te ajudou, considere dar uma estrela!**
 
