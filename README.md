@@ -1247,7 +1247,7 @@ SOFTWARE.
 
 ### Créditos
 
-Este projeto foi desenvolvido como parte do **Curso Docker da DevMedia**.
+Este projeto foi desenvolvido como parte do **Curso de Estrutura de Dados: Computação na prática com Java da DevMedia**.
 
 - **DevMedia** - Plataforma de ensino
 - **Docker Inc.** - Tecnologia de containerização
