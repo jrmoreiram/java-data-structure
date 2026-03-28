@@ -1,51 +1,48 @@
-# Curso de Estrutura de Dados: Computação na Prática com Java
+# 📦 Documentação do Software  
+## Projeto: Estruturas de Dados em Java
 
-## 📚 Sobre o Curso
-Este repositório contém os materiais e códigos-fonte desenvolvidos durante o curso "Estrutura de Dados: Computação na Prática com Java". O objetivo é obter uma compreensão prática das principais estruturas de dados e sua implementação em Java.
+## 1. 📖 Visão Geral
+Este projeto tem como objetivo implementar e demonstrar, de forma prática, as principais estruturas de dados utilizando a linguagem Java. Ele foi desenvolvido como material de apoio ao curso **"Estrutura de Dados: Computação na Prática com Java"**, servindo como referência didática e técnica.
 
-## 🎯 Temas Abordados
-- Funcionamento interno de arrays
-- Implementação de listas ligadas e duplamente ligadas
-- Diferenças entre filas e pilhas
-- Vantagens no uso de conjuntos
-- Como o Java implementa essas estruturas
-- Fundamentos da computação aplicados na prática
+O sistema contém implementações próprias de estruturas fundamentais, permitindo compreender seu funcionamento interno, comportamento e aplicações.
 
-## 📖 Estrutura do Curso
+---
 
-### Aulas
-1. **Bem-vindo ao curso**
-   - Apresentação e objetivos do curso
+## 2. 🎯 Objetivos
+- Demonstrar o funcionamento interno das estruturas de dados
+- Implementar estruturas clássicas sem uso direto de bibliotecas prontas
+- Facilitar o aprendizado prático de conceitos de computação
+- Servir como base para estudos e aprimoramento em Java
 
-2. **Armazenamento sequencial e Vetores**
-   - Como arrays funcionam na memória
-   - Implementação e manipulação de vetores
+---
 
-3. **Listas Ligadas**
-   - Conceito de nós e encadeamento
-   - Implementação de lista simplesmente ligada
+## 3. 🧱 Escopo do Sistema
+O projeto contempla as seguintes estruturas de dados:
 
-4. **Listas Duplamente Ligadas**
-   - Vantagens das listas duplamente ligadas
-   - Implementação e operações básicas
+- Arrays (Vetores)
+- Listas Ligadas (simples e duplamente ligadas)
+- Pilhas (Stack)
+- Filas (Queue)
+- Conjuntos (Set)
 
-5. **Pilhas**
-   - Princípio LIFO (Last In, First Out)
-   - Casos de uso e implementação
+Cada estrutura inclui:
+- Implementação
+- Operações básicas
+- Classes de teste
 
-6. **Filas**
-   - Princípio FIFO (First In, First Out)
-   - Diferenças para pilhas e implementação
+---
 
-7. **Conjuntos**
-   - Características de conjuntos
-   - Implementação e operações com conjuntos
+## 4. 🛠️ Tecnologias Utilizadas
+- **Java** (versão X ou superior)
+- IDE recomendada:
+  - IntelliJ IDEA
+  - Eclipse
+  - Visual Studio Code
 
-## 🛠️ Tecnologias Utilizadas
-- Java (versão X ou superior) [🔗Como instalar](link_para_instalacao_java)
-- IDE de sua preferência (Eclipse, IntelliJ IDEA, VS Code)
+---
 
-## 📂 Estrutura do Projeto
+## 5. 📂 Arquitetura do Projeto
+
 ```
 /data-structure
 │
@@ -53,44 +50,96 @@ Este repositório contém os materiais e códigos-fonte desenvolvidos durante o 
 │   ├── /ds
 │   ├── /doublylinkedlist
 │   │   ├── Cell.java
-|   |   ├── DoublyLinkedList.java
+│   │   ├── DoublyLinkedList.java
 │   │   └── DoublyLinkedListTest.java
 │   ├── /linkedlist
-|   |   ├── Cell.java
-|   |   ├── LinkedList.java
-|   |   └── LinkedListTest.java
+│   │   ├── Cell.java
+│   │   ├── LinkedList.java
+│   │   └── LinkedListTest.java
 │   ├── /queue
-|   |   ├── QueueTest.java
-|   |   └── Queues.java
+│   │   ├── Queues.java
+│   │   └── QueueTest.java
 │   ├── /set
-|   |   ├── SetTest.java
-|   |   └── Sets.java
+│   │   ├── Sets.java
+│   │   └── SetTest.java
 │   ├── /stack
-|   |   ├── StackTest.java
-|   |   └── Stacks.java
-│   ├── /stack
-|   |   ├── Student.java
-|   |   ├── Vector.java
-|   |   └── VectorTest.java
+│   │   ├── Stacks.java
+│   │   └── StackTest.java
+│   ├── /vector
+│   │   ├── Student.java
+│   │   ├── Vector.java
+│   │   └── VectorTest.java
 │
 ├── README.md
 └── LICENSE
 ```
 
-## 📝 Como Usar
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/jrmoreiram/java-data-structure.git
-   ```
-2. Importe o projeto na sua IDE Java favorita
-3. Explore os pacotes conforme as aulas do curso
+---
 
-## 🤝 Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests com melhorias.
+## 6. ⚙️ Funcionalidades
 
-## 📜 Licença
-Este projeto está licenciado sob a [MIT License](LICENSE).
+### 6.1 Vetores (Arrays)
+- Armazenamento sequencial em memória
+- Acesso direto por índice
+- Inserção e remoção controladas
+
+### 6.2 Listas Ligadas
+- Estrutura dinâmica baseada em nós
+- Inserção e remoção eficientes
+
+### 6.3 Listas Duplamente Ligadas
+- Navegação bidirecional
+- Maior flexibilidade nas operações
+
+### 6.4 Pilhas (Stack)
+- Estrutura LIFO (Last In, First Out)
+- Operações: push, pop, peek
+
+### 6.5 Filas (Queue)
+- Estrutura FIFO (First In, First Out)
+- Operações de enfileiramento e desenfileiramento
+
+### 6.6 Conjuntos (Set)
+- Armazenamento sem elementos duplicados
+- Operações de verificação e inserção
 
 ---
 
-**Caia de cabeça no mundo da computação!** 🚀
+## 7. ▶️ Como Executar o Projeto
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/jrmoreiram/java-data-structure.git
+```
+
+2. Importe o projeto em uma IDE Java
+
+3. Execute as classes de teste (`*Test.java`) para validar as estruturas
+
+---
+
+## 8. 🧪 Testes
+Cada estrutura possui classes de teste dedicadas que demonstram:
+- Uso das operações principais
+- Comportamento esperado
+- Casos básicos de validação
+
+---
+
+## 9. 🤝 Contribuição
+Contribuições são bem-vindas. Para colaborar:
+
+1. Fork do projeto  
+2. Criação de branch (`feature/nova-funcionalidade`)  
+3. Commit das alterações  
+4. Abertura de Pull Request  
+
+---
+
+## 10. 📜 Licença
+Este projeto está licenciado sob os termos da licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
+
+---
+
+## 11. 📌 Observações Finais
+Este projeto é voltado principalmente para fins educacionais e pode ser utilizado como base para estudos mais avançados em algoritmos e estruturas de dados.
