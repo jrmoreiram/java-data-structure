@@ -1250,9 +1250,9 @@ SOFTWARE.
 Este projeto foi desenvolvido como parte do **Curso de Estrutura de Dados: Computação na prática com Java da DevMedia**.
 
 - **DevMedia** - Plataforma de ensino
-- **Docker Inc.** - Tecnologia de containerização
-- **PHP Community** - Linguagem de programação
-- **Apache Foundation** - Servidor web
+- **Professores e estudantes** - Tecnologia e Ciência da Computação
+- **Java Community** - Linguagem de programação
+- **GitHub** - Todos os contribuidores
 
 ### Apoie o Projeto
 
